@@ -6,4 +6,4 @@ ENTRYPOINT ["/opt/jdk/bin/java", "-Djava.library.path=./DynamoDBLocal_lib", "-ja
 
 EXPOSE 7777
 
-CMD ["-InMemory", "-port", "7777"]
+CMD ["--help"]
