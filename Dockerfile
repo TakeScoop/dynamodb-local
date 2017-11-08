@@ -4,4 +4,6 @@ RUN /usr/bin/curl -L http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dy
 
 ENTRYPOINT ["/opt/jdk/bin/java", "-Djava.library.path=./DynamoDBLocal_lib", "-jar", "DynamoDBLocal.jar"]
 
-CMD ["-help"]
+EXPOSE 7777
+
+CMD ["-InMemory", "-port", "7777"]
